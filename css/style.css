@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --gradient: linear-gradient(45deg, #67f, #3f2);
+}
+
+@font-face {
+    font-family: angela;
+    src: url(../font/BLKCHCRY.TTF)
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+ /*   background: url(../img/bg.jpg); */
+    background-blend-mode: multiply;
+    background-size: cover;
+    background: #1f1f1f;
+    color: black;
+}
+
+header {
+    padding: 2rem 6rem;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul {
+    list-style: none;
+}
+
+header li {
+    padding: 0 1.5rem;
+    display: inline;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    font-family: 'angela';
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.5rem;
+    padding: 0 0.5rem;
+}
+
+
+.hero {
+    padding: 6rem;
+    margin: auto;
+    width: 70%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(245deg, rgb(35, 118, 201), rgb(72, 180, 68));
+    position: relative;
+    overflow: hidden;
+    border-radius: 2rem;
+}
+
+.patch {
+    position: absolute;
+    top: 2rem;
+    right: -3.5rem;
+    width: 230px;
+    transform: rotateZ(45deg);
+    background: #c1b94d;
+    color: black;
+    padding: 0.8rem 2rem;
+    font-weight: 600;
+    box-shadow: 5px 5px 10px 5px #312828c0;
+}
+h1 {
+    font-family: 'angela';
+    font-size: 3.5rem;
+}
+
+.hero a {
+    text-decoration: none;
+    color: black;
+    background: #b9c14d;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    box-shadow: 5px 5px 15px 5px #312828c0;
+}
+
+.hero p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero {
+        padding: 4.5rem;
+    }
+
+    header {
+        padding: 2rem;
+    }
+}
